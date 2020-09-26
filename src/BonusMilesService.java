@@ -1,8 +1,9 @@
 public class BonusMilesService {
     public int calculate(int cost){
-
         int miles;
-        miles = (int)Math.floor(cost / 20.0);
+        int milePerRub = 20;
+
+        miles = cost / milePerRub;
 
         return miles;
     }
